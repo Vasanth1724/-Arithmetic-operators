@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        float mealCost=sc.nextFloat();
+        int tipPercent=sc.nextInt();
+        int taxPercent=sc.nextInt();
+        float tip=(mealCost*tipPercent)/100.0f;
+        float tax=(taxPercent*mealCost)/100.0f;
+        float total=mealCost+tip+tax;
+        System.out.println(Math.round(total));
+        
+    }
+}
